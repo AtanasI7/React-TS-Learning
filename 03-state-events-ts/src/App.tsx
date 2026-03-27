@@ -9,9 +9,68 @@ export default function App() {
             <NameInput />
             <EmailInput />
             <SimpleForm />
+            <ThemeSwitcher />
+            <ToggleMenuDrop />
         </div>
     )
 }
+
+function ToggleMenuDrop() {
+    const [isClicked, setIsClicked] = useState<boolean>(false);
+
+    function toggleDropDown() {
+        setIsClicked(!isClicked);
+    }
+
+    return (
+        <div>
+            <button onClick={toggleDropDown}>{isClicked ? "Hide" : "Show"}</button>
+            <ul style={{
+                display: isClicked ? "block" : "none",
+                listStyle: "none"
+            }}>
+                <li>Home</li>
+                <li>Contacts</li>
+                <li>About</li>
+            </ul>
+            
+        </div>
+    )
+}
+
+
+
+
+//----
+
+function ThemeSwitcher() {
+    const [isDark, setIsDark] = useState<boolean>(false);
+
+    function toggleTheme() {
+        setIsDark(!isDark);
+    }
+
+    return (
+        <div
+            style={{
+                backgroundColor: isDark ? "#222" : "#fff",
+                color: isDark ? "#fff" : "#000",
+                padding: "20px",
+            }}
+        >
+            <h2 style={{
+                color: isDark ? "white" : "black"
+            }}>{isDark ? "Dark mode" : "Light mode"}</h2>
+            <button onClick={toggleTheme}>
+                Switch theme
+            </button>
+        </div>
+    )
+
+}
+
+
+//---
 
 function SimpleForm() {
     const [name, setName] = useState<string>("");
@@ -23,7 +82,7 @@ function SimpleForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input 
+            <input
                 type="text"
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Name"
@@ -32,8 +91,6 @@ function SimpleForm() {
         </form>
     )
 }
-
-
 
 //----
 
