@@ -33,7 +33,6 @@ export default function App() {
 //----
 
 type TaskCardProps = {
-    id: number,
     title: string,
     done: boolean
 }
