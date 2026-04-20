@@ -7,8 +7,31 @@ function RootLayout() {
                 <h1>Test</h1>
 
                 <nav>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/switcher">Switcher</NavLink>
+                    <li>
+                        <NavLink to="/">Home</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink to="/switcher">Switcher</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink to="/login">Login</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink to="/reallogin">Real Login</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink to="/users">Users Page</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink to="/debounceSearch">Search timer Test</NavLink>
+                    </li>
+
+
                 </nav>
             </header>
 
