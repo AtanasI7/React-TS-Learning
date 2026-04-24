@@ -31,6 +31,13 @@ function RootLayout() {
                         <NavLink to="/debounceSearch">Search timer Test</NavLink>
                     </li>
 
+                    <li>
+                        <NavLink to="/counter">Counter</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink to="/contextTest">Context test</NavLink>
+                    </li>
 
                 </nav>
             </header>

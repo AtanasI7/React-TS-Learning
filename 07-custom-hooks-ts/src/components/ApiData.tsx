@@ -1,8 +1,10 @@
+import { useState } from "react";
 import useFetch from "./FetchTest";
+import useDebounce from "./DebounceTest";
 
 type User = {
-  id: number;
-  name: string;
+    id: number;
+    name: string;
 };
 
 function UsersPage() {
