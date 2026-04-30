@@ -38,6 +38,10 @@ function RootLayout() {
                     <li>
                         <NavLink to="/contextTest">Context test</NavLink>
                     </li>
+                    
+                    <li>
+                        <NavLink to="/contextUserTest">User Context test</NavLink>
+                    </li>
 
                 </nav>
             </header>

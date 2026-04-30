@@ -9,6 +9,7 @@ import UsersPage from './components/ApiData';
 import SearchBox from './components/DebounceTest';
 import Counter from './components/CounterReducer';
 import ContextTest from './components/ContextTest';
+import UserContextTask from './components/UserContextTask';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 				<Route path='debounceSearch' element={<SearchBox />} />
 				<Route path='counter' element={<Counter />} />
 				<Route path='contextTest' element={<ContextTest />} />
+				<Route path='contextUserTest' element={<UserContextTask />} />
 			</Route>
 		</Routes >
 
